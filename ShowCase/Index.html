@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Showcase</title>
+
+    <script>if(getCookie("SessionToken") == null){
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        window.location.href = "http://localhost:63342/ShowCase/login.html";
+    }
+
+    </script>
+    <script defer src="/signalr/dist/browser/signalr.js"></script>
+    <script type="module" src="scripts/auth.js"></script>
+    <link rel="stylesheet" href="style/Layout.css">
+    <link rel="stylesheet" href="style/Chat.css">
+    <link rel="stylesheet" href="style/Afspraken.css">
+    <link rel="stylesheet" href="style/Bucketlist.css">
+    <link rel="stylesheet" href="style/GroupSettings.css">
+    <link rel="stylesheet" href="style/PopupAddFriendgroup.css">
+    <script type="module" src="scripts/apiConnection.js"></script>
+    <script type="module" src="scripts/chatApp.js"></script>
+    <script defer type="module" src="scripts/layout/mainHeader.js"></script>
+    <script defer type="module" src="scripts/layout/sidebar.js"></script>
+    <script defer src="logout.js"></script>
+    <script defer type="module" src="/chat.js"></script>
+    <script defer type="module" src="/scripts/group.js"></script>
+
+</head>
+
+<body>
+<section class="pop_up__friendgroup">
+
+    <div class="pop_up_friendgroup__container">
+        <div class="friendgroup__container--header">
+            <h2 class="friendgroup-container__title ">Vriendengroep aanmaken</h2>
+            <span class="login-container__title pop_up_friendgroup__close">X</span>
+        </div>
+
+        <form method="post" class="friendgroup-container__form">
+            <span>Groepsnaam:</span>
+            <input type="text" value="groupName" class="friendgroup-container-form__input creategroup__name">
+
+            <span>Groeps afbeelding:</span>
+            <input type="text" value="groupPicture" class="friendgroup-container-form__input creategroup__picture">
+
+            <input type="submit" value="Groep aanmaken" class="friendgroup-container-form__input button">
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<section id="body__container">
+
+    <section class="sidebar">
+        <div class="persona">
+            <img src="" class="persona__profile-picture">
+            <h2 class="persona__name"></h2>
+        </div>
+
+        <div class="vriendengroepen">
+            <ul class="vriendengroepen__lijst">
+
+            </ul>
+
+            <a class="vriendengroepen-lijst__toevoegen" href="#">
+                    Vriendengroep toevoegen
+            </a>
+        </div>
+
+        <div class="instellingen">
+            <button class="instellingen__knop">Instellingen</button>
+            <button class="instellingen__knop uitloggen_knop">Uitloggen</button>
+        </div>
+    </section>
+
+    <section id="default_main">
+        <h2>Klik een groep aan in de sidebar</h2>
+    </section>
+    <section id="main">
+        <div class="main__header">
+
+            <div class="main--header__group-info">
+                <img src="" class="main-header__image">
+                <h3 class="main-header__groespnaam"></h3>
+            </div>
+
+            <div class="main-header__menu">
+                <button class="main-header-menu__item menu-page__chat">Chat</button>
+                <button class="main-header-menu__item menu-page__afspraken">Afspraken</button>
+                <button class="main-header-menu__item menu-page__bucketlist">Bucket list</button>
+                <button class="main-header-menu__item menu-page__group-settings">Groep settings</button>
+            </div>
+
+        </div>
+
+        <div class="main__content">
+
+            <section id="main-content__chat">
+
+                <app-chat></app-chat>
+
+            </section>
+
+            <section id="main-content__afspraken">
+
+                <h1 class="afspraken__title">Afspraken</h1>
+
+                <div class="afspraken__container">
+
+                    <div class="afspraken-container__item">
+
+                        <div class="afspraken-container-item__container">
+                            <div class="afspraken-container-item__left">
+                                <h4 class="afspraken-container-item__title">Afspraak naam</h4>
+                                <h5 class="afspraken-container-item__aanwezig">Aanwezig:</h5>
+                                <ul class="afspraken-container-item-aanwezig__container">
+                                    <li class="afspraken-container-item-aanwezig__item"><img class="aanwezig-item__image" src="https://www.aap.nl/wp-content/uploads/2021/08/AAP_chimpsoortinfo_profileA.jpg"> </li>
+                                    <li class="afspraken-container-item-aanwezig__item"><img class="aanwezig-item__image" src="https://www.aap.nl/wp-content/uploads/2021/08/AAP_chimpsoortinfo_profileA.jpg"> </li>
+                                    <li class="afspraken-container-item-aanwezig__item"><img class="aanwezig-item__image" src="https://www.aap.nl/wp-content/uploads/2021/08/AAP_chimpsoortinfo_profileA.jpg"> </li>
+                                    <li class="afspraken-container-item-aanwezig__item"><img class="aanwezig-item__image" src="https://www.aap.nl/wp-content/uploads/2021/08/AAP_chimpsoortinfo_profileA.jpg"> </li>
+                                </ul>
+                            </div>
+
+                            <div class="afspraken-container-item__right">
+                                <h5 class="afspraken-container-item__datum">Datum: 10-05-2000</h5>
+                                <h5 class="afspraken-container-item__tijd">Tijd: 06:00/22:00</h5>
+                                <div class="afspraken-container-item__right_edit">
+                                    <span class="afspraken-container-item__edit">✎</span>
+                                    <span class="afspraken-container-item__delete">🗑️</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="afspraken-container-item__buttons">
+                            <button class="afspraken-container-item__button">Aanwezig</button>
+                            <button class="afspraken-container-item__button">Afwezig</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="main-content__bucketlist">
+                <h1 class="bucketlist__title">Bucket list</h1>
+                <div class="bucketlist__options">
+                    <button class="bucketlist-options__button">Alles</button>
+                    <button class="bucketlist-options__button">Open</button>
+                    <button class="bucketlist-options__button">Gedaan</button>
+                </div>
+                <div class="bucketlist__container">
+
+                    <div class="bucketlist-container__item">
+                        <div class="bucketlist-container-item__titelcontainer">
+                            <input class="bucketlist-container-item__checkbox" type="checkbox">
+                            <h4 class="bucketlist-container-item__title">Bucket list Item</h4>
+                        </div>
+
+                        <div class="bucketlist-contianer-item__edit-container">
+                            <span class="bucketlist-container-item__edit">✎</span>
+                            <span class="bucketlist-container-item__delete">🗑️</span>
+                        </div>
+                    </div>
+
+                    <div class="bucketlist-container__item">
+                        <div class="bucketlist-container-item__titelcontainer">
+                            <input class="bucketlist-container-item__checkbox" type="checkbox">
+                            <h4 class="bucketlist-container-item__title">Bucket list Item</h4>
+                        </div>
+
+                        <div class="bucketlist-contianer-item__edit-container">
+                            <span class="bucketlist-container-item__edit">✎</span>
+                            <span class="bucketlist-container-item__delete">🗑️</span>
+                        </div>
+                    </div>
+
+                    <div class="bucketlist-container__item">
+                        <div class="bucketlist-container-item__titelcontainer">
+                            <input class="bucketlist-container-item__checkbox" type="checkbox">
+                            <h4 class="bucketlist-container-item__title">Bucket list Item</h4>
+                        </div>
+
+                        <div class="bucketlist-contianer-item__edit-container">
+                            <span class="bucketlist-container-item__edit">✎</span>
+                            <span class="bucketlist-container-item__delete">🗑️</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section id="main-content__group-settings">
+
+                <h1 class="group-settings__title">Groepsleden toevoegen</h1>
+
+                <form class="group-settings__form" method="post">
+                    <input class="group-settings-form__input" id="groupAddUser_input" type="text">
+                    <input class="group-settings-form__submit" id="groupAddUser_submit" type="submit" value="Toevoegen">
+                </form>
+
+                <h1 class="group-settings__title">Groepsleden</h1>
+
+                <div class="group-settings__container">
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class="main__footer">
+            <form class="main-footer__form" method="post">
+                <input class="main-footer-form__input" id="chat_input" type="text">
+                <input class="main-footer-form__submit" id="chat_submit" type="submit" disabled="true">
+            </form>
+        </div>
+    </section>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/ShowCase_Friends_API.props" />
+</Project>

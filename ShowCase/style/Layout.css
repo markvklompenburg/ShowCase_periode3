@@ -1,0 +1,166 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+
+#body__container{
+  display: flex;
+}
+
+.sidebar{
+    background-color: #003F88;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.persona{
+    text-align: center;
+    color: white;
+}
+
+.vriendengroepen__lijst{
+    padding: 0px;
+}
+
+.vriendengroepen-lijst__item{
+    list-style-type: none;
+}
+
+.vriendengroepen__lijst a{
+    color: white;
+    text-decoration: none;
+}
+
+.vriendengroepen-lijst-item__image{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+#main{
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#default_main{
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: dimgray;
+    justify-content: center;
+}
+
+.main__header{
+    height: 70px;
+    background-color: #00509D;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+}
+
+.main--header__group-info{
+    display: flex;
+    align-items: center;
+}
+
+.main-header-menu__item{
+    padding: 15px 25px;
+    border-radius: 8px;
+    background-color: #2c7da0;
+    border: 0px;
+    color: white;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.main__content{
+    height: 67.3%;
+    padding: 30px;
+    overflow: scroll;
+}
+
+.main__footer{
+    height: 70px;
+    background-color: dimgrey;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.main-header__image{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.persona__profile-picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.main-footer-form__input{
+    padding: 15px;
+    width: 600px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.main-footer-form__submit{
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.instellingen{
+    display: flex;
+    flex-direction: column;
+}
+
+.instellingen__knop{
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #2c7da0;
+    border: 0px;
+    color: white;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.vriendengroepen-lijst__toevoegen{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vriendengroepen-lijst__item{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}

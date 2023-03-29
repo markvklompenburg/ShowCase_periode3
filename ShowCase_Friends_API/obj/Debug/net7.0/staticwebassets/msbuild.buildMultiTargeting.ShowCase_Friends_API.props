@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/ShowCase_Friends_API.props" />
+</Project>

@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{2FA1FB53-41BF-4CA6-89E8-9154B31FD173}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ShowCase__Friends__API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/UserGroupController.cs">
+    <Files>
+      <File FileName="DAL/DatabaseContext.cs" />
+      <File FileName="Program.cs" Line="18" Column="2" />
+      <File FileName="appsettings.json" />
+      <File FileName="Controllers/UserController.cs" />
+      <File FileName="Controllers/BucketlistController.cs" />
+      <File FileName="Models/Chat/ChatItem.cs" Line="11" Column="18" />
+      <File FileName="Models/Chat/Chat.cs" Line="1" Column="1" />
+      <File FileName="Models/Afspraken/Afspraken.cs" />
+      <File FileName="Models/Afspraken/AfsprakenItem.cs" Line="1" Column="1" />
+      <File FileName="Models/Group.cs" Line="1" Column="1" />
+      <File FileName="Models/Bucketlist/Bucketlist.cs" />
+      <File FileName="Models/Bucketlist/BucketlistItem.cs" />
+      <File FileName="Models/UserGroup.cs" />
+      <File FileName="Models/User.cs" Line="1" Column="1" />
+      <File FileName="Controllers/GroupController.cs" />
+      <File FileName="Controllers/UserGroupController.cs" Line="35" Column="10" />
+      <File FileName="ShowCase_Friends_API.csproj" />
+      <File FileName="Controllers/ChatItemController.cs" Line="52" Column="54" />
+      <File FileName="Models/Session.cs" />
+      <File FileName="Models/Login.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShowCase_Friends_API" expanded="True">
+            <Node name="ShowCase_Friends_API" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="UserGroupController.cs" selected="True" />
+              </Node>
+              <Node name="DAL" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Afspraken" expanded="True" />
+                <Node name="Bucketlist" expanded="True" />
+                <Node name="Chat" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

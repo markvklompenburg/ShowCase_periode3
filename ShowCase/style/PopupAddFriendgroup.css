@@ -1,0 +1,44 @@
+.pop_up__friendgroup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 50px;
+    display: none;
+}
+
+.friendgroup-container__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.friendgroup-container-form__input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 15px 25px;
+}
+
+.friendgroup-container__title{
+    margin: 0px;
+}
+
+.friendgroup-container__form .button{
+    background-color: #2c7da0;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.friendgroup__container--header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}

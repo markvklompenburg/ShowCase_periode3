@@ -1,0 +1,42 @@
+#main-content__chat{
+    display: block;
+}
+
+.main-content__message{
+    display: flex;
+    flex-direction: inherit;
+    margin-bottom: 15px;
+}
+
+.main-message__container{
+    background-color: lightgrey;
+    width: auto;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.message--container__gebruikersnaam{
+    margin: 0px;
+}
+
+.message__image{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.message--container__bericht{
+    margin: 0;
+}
+
+.message--container__tijd{
+    margin: 0;
+    font-size: 12px;
+    float: right;
+    margin-top: 3px;
+}
+
+.main_content_message_outgoing{
+    justify-content: end;
+}
